@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+.spvCardsDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mainContent{
+    padding: 20px;
+    padding-top: 8px;
+}
+.spvCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   background-color: rgb(255, 255, 255);
+   padding: 10px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+   border-radius: 20px;
+
+   & .mainHeading{
+    margin:5px 0 20px;
+
+    & h3{
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 22px;
+    }
+   }
+   & .cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.spvCards .card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:10px 5px 10px;
+    background-color: #f7f6f6;
+    border: none;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    color: white;
+    border-radius: 20px;
+}
+.card .cardHeading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 4px 0 0;
+}
+.card .cardFlex{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    & div{
+        border-radius: 10px;
+        display: flex;
+        gap: 28px;
+        justify-content: space-between;
+        padding: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.5s ease;
+      
+        & .cardText{
+            width: 26%;
+        }
+        & .cardNumber{
+            width: 10%;
+            color: white;
+            text-decoration: none;
+        }
+        & .cardNumberr{
+            width: 20%;
+            color: white;
+            text-decoration: none;
+        }
+    }
+    & div:hover{
+        background-color: rgba(239, 239, 239, 0.196);
+        
+    }
+}
+
+.heads{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8px 0 0 40px;
+    font-size: 12px;
+}

@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "https://pmuportal.mahadiscom.in/api/$1"
+      }
+    ]
+  }
+  

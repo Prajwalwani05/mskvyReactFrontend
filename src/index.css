@@ -1,0 +1,249 @@
+
+::-webkit-scrollbar-thumb{
+    background-color: #a7a6a4;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(240, 236, 236);
+}
+.App{
+  background-color: #f0f0f0;
+  /* padding: 5px; */
+}
+.loadingDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(248, 248, 248, 0.471);
+}
+.loader {
+  display: flex;
+  align-items: center;
+}
+/* .chaotic-orbit {
+
+
+  --uib-size: 25px;
+  --uib-speed: 1.5s;
+  --uib-color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--uib-size);
+  width: var(--uib-size);
+  animation: rotate936 calc(var(--uib-speed) * 1.667) infinite linear;
+ }
+ 
+ .chaotic-orbit::before,
+ .chaotic-orbit::after {
+  content: '';
+  position: absolute;
+  height: 60%;
+  width: 60%;
+  border-radius: 50%;
+  background-color: var(--uib-color);
+  will-change: transform;
+  flex-shrink: 0;
+ }
+ 
+ .chaotic-orbit::before {
+  animation: orbit var(--uib-speed) linear infinite;
+ }
+ 
+ .chaotic-orbit::after {
+  animation: orbit var(--uib-speed) linear calc(var(--uib-speed) / -2)
+     infinite;
+ }
+ 
+ @keyframes rotate936 {
+  0% {
+   transform: rotate(0deg);
+  }
+ 
+  100% {
+   transform: rotate(360deg);
+  }
+ }
+ 
+ @keyframes orbit {
+  0% {
+   transform: translate(calc(var(--uib-size) * 0.5)) scale(0.73684);
+   opacity: 0.65;
+  }
+ 
+  5% {
+   transform: translate(calc(var(--uib-size) * 0.4)) scale(0.684208);
+   opacity: 0.58;
+  }
+ 
+  10% {
+   transform: translate(calc(var(--uib-size) * 0.3)) scale(0.631576);
+   opacity: 0.51;
+  }
+ 
+  15% {
+   transform: translate(calc(var(--uib-size) * 0.2)) scale(0.578944);
+   opacity: 0.44;
+  }
+ 
+  20% {
+   transform: translate(calc(var(--uib-size) * 0.1)) scale(0.526312);
+   opacity: 0.37;
+  }
+ 
+  25% {
+   transform: translate(0%) scale(0.47368);
+   opacity: 0.3;
+  }
+ 
+  30% {
+   transform: translate(calc(var(--uib-size) * -0.1)) scale(0.526312);
+   opacity: 0.37;
+  }
+ 
+  35% {
+   transform: translate(calc(var(--uib-size) * -0.2)) scale(0.578944);
+   opacity: 0.44;
+  }
+ 
+  40% {
+   transform: translate(calc(var(--uib-size) * -0.3)) scale(0.631576);
+   opacity: 0.51;
+  }
+ 
+  45% {
+   transform: translate(calc(var(--uib-size) * -0.4)) scale(0.684208);
+   opacity: 0.58;
+  }
+ 
+  50% {
+   transform: translate(calc(var(--uib-size) * -0.5)) scale(0.73684);
+   opacity: 0.65;
+  }
+ 
+  55% {
+   transform: translate(calc(var(--uib-size) * -0.4)) scale(0.789472);
+   opacity: 0.72;
+  }
+ 
+  60% {
+   transform: translate(calc(var(--uib-size) * -0.3)) scale(0.842104);
+   opacity: 0.79;
+  }
+ 
+  65% {
+   transform: translate(calc(var(--uib-size) * -0.2)) scale(0.894736);
+   opacity: 0.86;
+  }
+ 
+  70% {
+   transform: translate(calc(var(--uib-size) * -0.1)) scale(0.947368);
+   opacity: 0.93;
+  }
+ 
+  75% {
+   transform: translate(0%) scale(1);
+   opacity: 1;
+  }
+ 
+  80% {
+   transform: translate(calc(var(--uib-size) * 0.1)) scale(0.947368);
+   opacity: 0.93;
+  }
+ 
+  85% {
+   transform: translate(calc(var(--uib-size) * 0.2)) scale(0.894736);
+   opacity: 0.86;
+  }
+ 
+  90% {
+   transform: translate(calc(var(--uib-size) * 0.3)) scale(0.842104);
+   opacity: 0.79;
+  }
+ 
+  95% {
+   transform: translate(calc(var(--uib-size) * 0.4)) scale(0.789472);
+   opacity: 0.72;
+  }
+ 
+  100% {
+   transform: translate(calc(var(--uib-size) * 0.5)) scale(0.73684);
+   opacity: 0.65;
+  }
+ }
+ 
+ 
+
+.loading-text {
+  font-size:15px;
+  line-height: 1rem;
+  font-weight: 700;
+  margin-left: 15px;
+  color: rgb(255, 255, 255);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* From Uiverse.io by asgardOP */ 
+.loader {
+  width: 5px;
+  margin-left: 3px;
+  height: 35px;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+  background-color: #10b981;
+  position: relative;
+}
+
+.l1 {
+  animation: l1 1s 0s infinite ease;
+}
+
+.l2 {
+  animation: l1 1s 0.1s infinite ease;
+}
+
+.l3 {
+  animation: l1 1s 0.2s infinite ease;
+}
+
+.l4 {
+  animation: l1 1s 0.3s infinite ease;
+}
+
+.l5 {
+  animation: l1 1s 0.4s infinite ease;
+}
+
+.l6 {
+  animation: l1 1s 0.5s infinite ease;
+}
+
+.l7 {
+  animation: l1 1s 0.6s infinite ease;
+}
+
+@keyframes l1 {
+  0% {
+    height: 35px;
+  }
+  50% {
+    height: 5px;
+    background-color: rgba(0, 190, 16, 0);
+  }
+
+  100% {
+    height: 35px;
+  }
+}

@@ -1,0 +1,42 @@
+.pieCard .labels{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+
+}
+.labels div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.labels .pieCardText{
+    font-size: 10px;
+    font-weight: 700;
+}
+.labels .Color{
+    width: 10px;
+    height: 10px;
+}
+.labels .green{
+    background-color: green;
+}
+.labels .yellow{
+    background-color: yellow;
+}
+.labels .red{
+    background-color: red;
+}
+.labels .gray{
+    background-color: darkgray;
+}
+.completed-background{
+    box-shadow: rgba(139, 243, 139, 0.568) 2px 2px 20px 1px !important;
+}
+.in-progress-background{
+    box-shadow: rgba(252, 252, 133, 0.592) 2px 2px 20px 1px !important;
+}
+.yet-to-start-background{
+    box-shadow: rgba(255, 135, 135, 0.44) 2px 2px 20px 1px !important;
+}
